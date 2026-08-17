@@ -1,0 +1,14 @@
+# Python environment and cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secret Environment Variables (NEVER UPLOAD THIS)
+.env
+
+# React / Frontend dependencies
+node_modules/
+build/
+.DS_Store
