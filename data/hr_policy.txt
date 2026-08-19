@@ -1,0 +1,13 @@
+Billion Atom Global Employee Data Privacy and LLM Usage Policy (Effective 2026)
+
+Section 1: General Usage Guidelines
+All Billion Atom employees are encouraged to utilize internal AI tools to accelerate development workflows. However, any use of external Large Language Models (LLMs) such as public ChatGPT, Anthropic Claude, or unauthorized open-source instances is strictly prohibited for company codebases.
+
+Section 2: Personally Identifiable Information (PII) Scrubbing
+Under no circumstances shall any employee transmit raw customer data to an LLM. All data must pass through the company's automated anonymization pipeline before processing. Specifically, engineers must ensure that Personally Identifiable Information (PII)—which strictly includes phone numbers, email addresses, government IDs, and physical home addresses—are completely scrubbed and masked. IP addresses, while considered sensitive, may be retained only if hashed using SHA-256 protocols.
+
+Section 3: Incident Reporting Protocol
+If an employee inadvertently transmits unmasked PII to an external or internal LLM, this constitutes a Tier 1 Data Breach. The employee must immediately cease all system activity. They are required to report the breach directly to the Chief Compliance Officer via the internal ticketing system within exactly 24 hours of the incident. Failure to report within this window is grounds for immediate termination.
+
+Section 4: Authorized Models
+Only models deployed within the Billion Atom Azure AI Foundry environment, specifically authenticated via Managed Identities, are approved for production workloads.
